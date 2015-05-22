@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainViewController">
+	<center>
+		<ListView fx:id="dataView"/>
+	</center>
+	<bottom>
+		<HBox spacing="5" alignment="CENTER">
+			<padding>
+				<Insets top="5" bottom="5" left="5" right="5"/>
+			</padding>
+			<Button onAction="#logout" text="Log Out"/>
+		</HBox>
+	</bottom>
+</BorderPane>
+

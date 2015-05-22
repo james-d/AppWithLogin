@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+	
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController" 
+	alignment="CENTER" hgap="5" vgap="5">
+	
+	<padding>
+		<Insets top="5" bottom="5" left="5" right="5" />
+	</padding>
+	<columnConstraints>
+		<ColumnConstraints halignment="RIGHT" hgrow="NEVER"/>
+		<ColumnConstraints halignment="LEFT" hgrow="ALWAYS"/>
+	</columnConstraints>
+	<Label text="Login" id="login-label">
+		<GridPane.columnSpan>2</GridPane.columnSpan>
+		<GridPane.halignment>CENTER</GridPane.halignment>
+	</Label>
+	<Label text="User Name:">
+		<GridPane.rowIndex>1</GridPane.rowIndex>
+		<GridPane.columnIndex>0</GridPane.columnIndex>
+	</Label>
+	<TextField fx:id="userNameField">
+		<GridPane.rowIndex>1</GridPane.rowIndex>
+		<GridPane.columnIndex>1</GridPane.columnIndex>
+	</TextField>
+	<Label text="Password:">
+		<GridPane.rowIndex>2</GridPane.rowIndex>
+		<GridPane.columnIndex>0</GridPane.columnIndex>
+	</Label>
+	<PasswordField fx:id="passwordField">
+		<GridPane.rowIndex>2</GridPane.rowIndex>
+		<GridPane.columnIndex>1</GridPane.columnIndex>
+	</PasswordField>
+	<Label fx:id="errorLabel" id="error-label">
+		<GridPane.rowIndex>3</GridPane.rowIndex>
+		<GridPane.columnSpan>2</GridPane.columnSpan>	
+		<GridPane.halignment>CENTER</GridPane.halignment>
+	</Label>
+	<HBox spacing="5" alignment="CENTER">
+		<GridPane.rowIndex>4</GridPane.rowIndex>
+		<GridPane.columnSpan>2</GridPane.columnSpan>
+		
+		<Button onAction="#ok" text="OK"/>
+		<Button onAction="#cancel" text="Cancel"/>
+	</HBox>
+</GridPane>

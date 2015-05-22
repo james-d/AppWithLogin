@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+	
+<BorderPane fx:id="root" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+	<center>
+		<fx:include source="Login.fxml" fx:id="login"/>
+	</center>
+</BorderPane>
