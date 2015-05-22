@@ -5,7 +5,7 @@ import javafx.beans.property.SimpleObjectProperty;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 
-public class MainViewController {
+public class DataViewController {
     private final ObjectProperty<User> user = new SimpleObjectProperty<>();
 
     public final ObjectProperty<User> userProperty() {

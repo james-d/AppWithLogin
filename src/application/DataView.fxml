@@ -6,7 +6,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainViewController">
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DataViewController">
 	<center>
 		<ListView fx:id="dataView"/>
 	</center>

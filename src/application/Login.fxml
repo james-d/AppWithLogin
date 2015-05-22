@@ -27,7 +27,7 @@
 		<GridPane.rowIndex>1</GridPane.rowIndex>
 		<GridPane.columnIndex>0</GridPane.columnIndex>
 	</Label>
-	<TextField fx:id="userNameField">
+	<TextField fx:id="userNameField" onAction="#ok">
 		<GridPane.rowIndex>1</GridPane.rowIndex>
 		<GridPane.columnIndex>1</GridPane.columnIndex>
 	</TextField>
@@ -35,7 +35,7 @@
 		<GridPane.rowIndex>2</GridPane.rowIndex>
 		<GridPane.columnIndex>0</GridPane.columnIndex>
 	</Label>
-	<PasswordField fx:id="passwordField">
+	<PasswordField fx:id="passwordField" onAction="#ok">
 		<GridPane.rowIndex>2</GridPane.rowIndex>
 		<GridPane.columnIndex>1</GridPane.columnIndex>
 	</PasswordField>
